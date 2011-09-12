@@ -4,9 +4,20 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     >
-<TextView  
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content" 
-    android:text="@string/hello"
-    />
+    <TextView android:text="Dollars" android:id="@+id/dollarstxt" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <EditText android:id="@+id/dollars" android:layout_width="match_parent" android:layout_height="wrap_content"></EditText>
+    <TextView android:text="Euros" android:id="@+id/eurostxt" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <EditText android:id="@+id/euros" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <requestFocus></requestFocus>
+    </EditText>
+    <RadioGroup
+    android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      >
+	    <RadioButton android:text="Dollars To Euros" android:id="@+id/dtoe" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+	    <RadioButton android:text="Euros To Dollars" android:id="@+id/etod" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+	    
+    </RadioGroup>
+    <Button android:text="Convert" android:id="@+id/convert" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
 </LinearLayout>
